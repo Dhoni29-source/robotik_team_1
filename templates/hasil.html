@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Deployment</title>
+{% endblock %}
+
+{% block body %}
+<div class="container-contact100">
+    <div class="wrap-contact100">
+        <form class="contact100-form validate-form" action="/" method="GET">
+            {% if finalData == 0 %}
+            <span class="contact100-form-title">
+                Udara Baik, Enjoy your time
+            </span>
+
+            {% elif finalData == 1 %}
+            <span class="contact100-form-title">
+                Udara Kurang Baik, Silahkan lakukan upaya Penyehatan
+            </span>
+
+            {% endif %}
+
+            <div class="container-contact100-form-btn">
+                <div class="wrap-contact100-form-btn">
+                    <div class="contact100-form-bgbtn"></div>
+                    <button class="contact100-form-btn">
+                        <span>
+                            Selesai
+                        </span>
+                    </button>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+</div>
+
+{% endblock %}
